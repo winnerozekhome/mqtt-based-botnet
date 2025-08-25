@@ -76,7 +76,7 @@ mqtt-based-botnet/
 │   ├── run_bots.sh          # Script to spawn multiple bot instances
 │   ├── seed_harvesting.py   # Seed generation and harvesting
 │   ├── string_generator.py  # Dynamic string generation utilities
-│   └── tga_generator.py     # TGA (Truevine Genetic Algorithm) utilities
+│   └── tga_generator.py     # TGA (Topic Generation algorithm ) utilities
 ├── c2/                      # Command & Control server
 │   ├── c2.py               # Main C2 controller logic
 │   ├── cipher.py           # Encryption/decryption utilities (shared)
@@ -90,28 +90,6 @@ mqtt-based-botnet/
 ├── LICENSE
 └── README.md
 ```
-
-
-## 🔧 Core Components
-
-### Bot Architecture (`bot/`)
-- **`main.py`**: Entry point that initializes and starts the bot client
-- **`bot.py`**: Core bot functionality, command processing, and system operations
-- **`mqtt.py`**: MQTT client implementation for communication
-- **`cipher.py`**: Encryption/decryption module for secure communications
-- **`seed_harvesting.py`**: Cryptographic seed generation and management
-- **`string_generator.py`**: Dynamic string generation for obfuscation and identification
-- **`tga_generator.py`**: Topic Generation Algorithm
-- **`run_bots.sh`**: Shell script for launching multiple bot instances simultaneously
-
-### C2 Server Architecture (`c2/`)
-- **`main.py`**: C2 server entry point and initialization
-- **`c2.py`**: Command and control logic, bot management, and command dispatch
-- **`mqtt.py`**: MQTT broker communication and message routing
-- **`cipher.py`**: Encryption utilities (shared with bots for compatibility)
-- **`seed_harvesting.py`**: Seed generation (shared implementation)
-- **`string_generator.py`**: String generation utilities (shared implementation)
-- **`tga_generator.py`**: Topic Generation algorithm utilities (shared implementation)
 
 TODO: config and requirements
 ## 🚀 Quick Start
