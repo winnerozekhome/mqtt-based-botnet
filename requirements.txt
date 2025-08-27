@@ -1,0 +1,11 @@
+# Python Requirements File
+# Install with: pip install -r requirements.txt
+
+# Cryptography libraries
+cryptography>=41.0.0
+
+# MQTT client library
+paho-mqtt>=1.6.0
+
+# HTTP requests library
+requests>=2.31.0
